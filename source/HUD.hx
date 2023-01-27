@@ -3,7 +3,6 @@ package;
 import flixel.util.FlxColor;
 import flixel.FlxSprite;
 import flixel.FlxG;
-import flixel.FlxObject;
 import flixel.group.FlxGroup;
 
 class HUD {
@@ -24,4 +23,8 @@ class HUD {
         this.elements.add(upperBar);
         this.elements.add(lowerBar);
     }
+
+    public function update(elapsed:Float) {
+		elements.update(elapsed);
+	}
 }
